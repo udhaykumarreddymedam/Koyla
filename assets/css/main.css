@@ -164,20 +164,22 @@ h6 {
 
 .header .btn-book-a-table,
 .header .btn-book-a-table:focus {
-  color: var(--default-color);
+  color: black;
   border: 2px solid var(--accent-color);
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: 500;
   padding: 6px 24px;
   margin: 0 5px 0 30px;
   border-radius: 50px;
   transition: 0.3s;
+  background: var(--accent-color);
 }
 
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
   color: var(--default-color);
-  background: var(--accent-color);
 }
 
 .scrolled .header .topbar {
@@ -801,7 +803,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   position: relative;
 }
 
@@ -891,9 +893,9 @@ section,
 }
 
 .hero .cta-btn {
-  color: var(--default-color);
+  color: black;
   border: 2px solid var(--accent-color);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -902,6 +904,7 @@ section,
   border-radius: 50px;
   transition: 0.3s;
   flex-shrink: 0;
+  background-color: var(--accent-color);
 }
 
 .hero .cta-btn:first-child {
@@ -909,7 +912,8 @@ section,
 }
 
 .hero .cta-btn:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  color: var(--default-color);
 }
 
 @media (max-width: 480px) {
@@ -1012,7 +1016,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+  background: url("../img/koylabyrahman.png") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1071,9 +1075,49 @@ section,
   transform: scale(1.03);
 }
 
+.about .cta-btn {
+  color: black;
+  border: 2px solid var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  flex-shrink: 0;
+  background-color: var(--accent-color);
+}
+
+.about .cta-btn:first-child {
+  margin-right: 10px;
+}
+
+.about .cta-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  color: var(--default-color);
+}
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
+.why-us {
+  background: url("../img/about-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.why-us:before {
+  content: "";
+  background: color-mix(in srgb, var(--contrast-color), transparent 12%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .why-us .card-item {
   background: color-mix(in srgb, var(--default-color), transparent 92%);
   padding: 50px 30px;
@@ -1235,7 +1279,7 @@ section,
   padding: 12px 15px;
   transition: 0.3s;
   color: var(--heading-color);
-  border-radius: 0;
+  border-radius: 8px;
   border-right: 2px solid var(--accent-color);
   font-weight: 600;
   font-size: 15px;
@@ -1380,6 +1424,23 @@ section,
 /*--------------------------------------------------------------
 # Book A Table Section
 --------------------------------------------------------------*/
+.book-a-table {
+  background: url("../img/bookatable.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.book-a-table:before {
+  content: "";
+  background: color-mix(in srgb, var(--contrast-color), transparent 52%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .book-a-table .php-email-form {
   padding: 30px;
 }
@@ -1439,14 +1500,10 @@ section,
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 20px;
   color: var(--default-color);
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 20%
-  );
-  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  background-color: color-mix(in srgb, var(--background-color), transparent 5%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 10%);
 }
 
 .book-a-table .php-email-form input[type="text"]:focus,
@@ -1464,7 +1521,7 @@ section,
 .book-a-table .php-email-form input[type="date"]::placeholder,
 .book-a-table .php-email-form input[type="time"]::placeholder,
 .book-a-table .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
 }
 
 .book-a-table .php-email-form button[type="submit"] {

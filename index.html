@@ -71,16 +71,6 @@
                 ></a>
                 <ul>
                   <li><a href="#">Dropdown 1</a></li>
-                  <li class="dropdown">
-                    <a href="#"
-                      ><span>Deep Dropdown</span>
-                      <i class="bi bi-chevron-down toggle-dropdown"></i
-                    ></a>
-                    <ul>
-                      <li><a href="#">Deep Dropdown 1</a></li>
-                      <li><a href="#">Deep Dropdown 2</a></li>
-                    </ul>
-                  </li>
                   <li><a href="#">Dropdown 2</a></li>
                   <li><a href="#">Dropdown 3</a></li>
                 </ul>
@@ -89,11 +79,14 @@
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
-
-          <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table"
-            >Book a Table</a
-          >
-          <a class="btn-book-a-table d-none d-xl-block" href="">Order Online</a>
+          <div class="d-flex">
+            <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table"
+              >Book a Table</a
+            >
+            <a class="btn-book-a-table d-none d-xl-block" href=""
+              >Order Online</a
+            >
+          </div>
         </div>
       </div>
     </header>
@@ -113,9 +106,6 @@
               </h2>
               <p data-aos="fade-up" class="fst-italic" data-aos-delay="200">
                 Where Every Detail is a Masterpiece...
-              </p>
-              <p data-aos="fade-up" class="fst-italic" data-aos-delay="200">
-                Delivering delicious food for more than 18 years..!
               </p>
               <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
                 <a href="#menu" class="cta-btn">Our Menu</a>
@@ -139,14 +129,21 @@
       <section id="about" class="about section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4 align-items-center">
-            <div class="col-lg-6 order-1 order-lg-2">
+            <div class="col-lg-2 order-1 order-lg-2">
               <img
-                src="assets/img/about.jpg"
+                src="assets/img/restaurantpic.png"
                 class="img-fluid about-img"
                 alt=""
               />
             </div>
-            <div class="col-lg-6 fst-italic order-2 order-lg-1 content">
+            <div class="col-lg-3 order-1 order-lg-2">
+              <img
+                src="assets/img/reatuaranttable.png"
+                class="img-fluid about-img"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-7 fst-italic order-2 order-lg-1 content">
               <h3>DISCOVER OUR STORY</h3>
               <ul>
                 <li>
@@ -171,13 +168,8 @@
                   >
                 </li>
               </ul>
-              <div class="d-flex mt-5" data-aos="fade-up" data-aos-delay="300">
-                <button
-                  href=""
-                  class="bg-warning rounded-pill border fst-italic fw-semibold text-dark px-3 py-1"
-                >
-                  ORDER ONLINE...
-                </button>
+              <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#menu" class="cta-btn">Know more...</a>
               </div>
             </div>
           </div>
@@ -188,7 +180,7 @@
       <!-- Why Us Section -->
       <section id="why-us" class="why-us section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title mb-5" data-aos="fade-up">
           <h2>WHY US</h2>
           <p>Why Choose Our Restaurant</p>
         </div>
@@ -242,9 +234,18 @@
       <!-- Menu Section -->
       <section id="menu" class="menu section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Menu</h2>
-          <p>Check Our Tasty Menu</p>
+        <div class="container d-flex section-title mb-5" data-aos="fade-up">
+          <div class="row">
+            <h2>Menu</h2>
+            <p>Check Our Tasty Menu</p>
+          </div>
+          <img
+            src="assets/img/koylabyrahman.png"
+            alt=""
+            class="img-fluid"
+            width="120px"
+            height="30px"
+          />
         </div>
         <!-- End Section Title -->
 
@@ -980,7 +981,7 @@
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title mb-5" data-aos="fade-up">
           <h2>Testimonials</h2>
           <p>What they're saying about us</p>
         </div>
@@ -1163,7 +1164,7 @@
       <!-- Gallery Section -->
       <section id="gallery" class="gallery section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title mb-5" data-aos="fade-up">
           <h2>Gallery</h2>
           <p>Some photos from Our Restaurant</p>
         </div>
@@ -1314,7 +1315,7 @@
       <!-- Chefs Section -->
       <section id="chefs" class="chefs section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title mb-5" data-aos="fade-up">
           <h2>Team</h2>
           <p>Professional Chefs</p>
         </div>
@@ -1398,7 +1399,7 @@
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title mb-5" data-aos="fade-up">
           <h2>Contact</h2>
           <p>Contact Us</p>
         </div>
