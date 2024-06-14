@@ -1266,6 +1266,23 @@ section,
 /*--------------------------------------------------------------
 # Specials Section
 --------------------------------------------------------------*/
+/* .specials {
+  background: url("../img/page-title-bg.webp") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.specials:before {
+  content: "";
+  background: color-mix(in srgb, var(--contrast-color), transparent 2%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+
 .specials {
   overflow: hidden;
 }
@@ -1425,7 +1442,7 @@ section,
 # Book A Table Section
 --------------------------------------------------------------*/
 .book-a-table {
-  background: url("../img/bookatable.jpg") center center;
+  background: url("../img/page-title-bg.webp") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1433,7 +1450,7 @@ section,
 
 .book-a-table:before {
   content: "";
-  background: color-mix(in srgb, var(--contrast-color), transparent 52%);
+  background: color-mix(in srgb, var(--contrast-color), transparent 50%);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1551,6 +1568,23 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials {
+  background: url("../img/specials-2.png") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.testimonials:before {
+  content: "";
+  background: color-mix(in srgb, var(--contrast-color), transparent 10%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .testimonials {
   background-color: color-mix(in srgb, var(--background-color) 90%, white 5%);
 }
